@@ -1,0 +1,112 @@
+:root {
+    --white-color: #fff;
+    --text-color: #333;
+    --color-main: #EE4D2D;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /*1 rem = 10px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        transform: scale(var(--Growth-form));
+    }
+    to {
+        transform: scale(var(--Growth-to));
+    }
+}
+
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0 0 0 0;
+    display: flex;
+    animation: FadeIn linear 0.2s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --Growth-form: 0.5;
+    --Growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: Growth linear 0.2s;
+}
+
+
+/* Button */
+
+.btn {
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    outline: none;
+    min-width: 120px;
+    height: 36px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-color);
+    line-height: 1.6rem;
+}
+
+.btn.btn-normal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--primary {
+    background-color: var(--color-main);
+    color: var(--white-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    /* filter: brightness(80%); */
+    background-color: #c3c3c3;
+    color: #949494;
+}
