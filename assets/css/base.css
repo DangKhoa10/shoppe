@@ -2,6 +2,9 @@
     --white-color: #fff;
     --text-color: #333;
     --color-main: #EE4D2D;
+    --height-navbar: 27px;
+    --height-header: 120px;
+    --height-logo_search_cart: calc(var(--height-header) - var(--height-navbar));
 }
 
 * {
