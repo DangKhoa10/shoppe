@@ -91,6 +91,7 @@
     border-radius: 10px;
     display: none;
     animation: FadeIn ease .5s;
+    z-index: 9999;
 }
 
 .header__qrcode::before {
@@ -136,6 +137,7 @@
     animation: InfoGrowth ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
+    z-index: 9999;
 }
 
 .header__notify::before {
@@ -247,6 +249,7 @@
     animation: InfoGrowth ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
+    z-index: 9999;
 }
 
 .header__language::before {
@@ -504,6 +507,7 @@
     box-shadow: 0 1px 2px #ccc;
     border-radius: 3px;
     display: none;
+    z-index: 9999;
 }
 
 .header__search-option::before {
