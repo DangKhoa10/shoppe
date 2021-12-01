@@ -124,7 +124,30 @@
                     </div>
                     <div class="header__search">
                         <div class="header__search-nav">
-                            <input type="text" placeholder="Siêu sale tiêu dùng" class="header__search-input">
+                            <div class="header__search-input-wrap">
+                                <input type="text" placeholder="Siêu sale tiêu dùng" class="header__search-input">
+
+                                <!-- History search -->
+                                <div class="header__history-search">
+                                    <h3 class="header__history-search-header">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__history-search-list">
+                                        <li class="header__history-search-item">
+                                            <a href="">Giày da</a>
+                                        </li>
+                                        <li class="header__history-search-item">
+                                            <a href="">Túi xách</a>
+                                        </li>
+                                        <li class="header__history-search-item">
+                                            <a href="">Bàn phím cơ</a>
+                                        </li>
+                                        <li class="header__history-search-item">
+                                            <a href="">Loa</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
                             <div class="header__search-select">
                                 <span class="header__search-name">Trong shop</span>
                                 <i class="header__search-select-icon fas fa-angle-down"></i>
@@ -145,7 +168,15 @@
                         </div>
                     </div>
                     <div class="header__cart">
-                        <i class="header__cart-icon far fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <span class="header__cart-notice">5</span>
+                            <i class="header__cart-icon far fa-shopping-cart"></i>
+                            <!-- Giỏ hàng -->
+                            <div class="header__cart-list header__cart-list-empty">
+                                <div class="header__cart-img-empty"></div>
+                                <p class="header__cart-desc-empty">Chưa có sản phẩm</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
