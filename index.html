@@ -334,7 +334,7 @@
         </header>
         <div class="app__container">
             <div class="grid">
-                <div class="grid__row">
+                <div class="grid__row pt-24">
                     <div class="grid__column-2">
                         <nav class="category">
                             <h3 class="category__heading"><i class="category__heading-icon fas fa-list"></i><span>Danh mục</span></h3>
@@ -354,7 +354,31 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10"></div>
+                    <div class="grid__column-10">
+                        <div class="sort-bar">
+                            <h3 class="sort-bar__lable">Sắp xếp theo</h3>
+                            <button class="btn btn--primary ml-10 btn--sort-bar">Phổ biến</button>
+                            <button class="btn ml-10 btn--sort-bar">Mới nhất</button>
+                            <button class="btn ml-10 btn--sort-bar">Bán chạy</button>
+                            <div class="sort-bar__select ml-10">
+                                <span>Giá</span>
+                                <i class="sort-bar__select-icon fas fa-angle-down"></i>
+                                <div class="sort-bar__select-option">
+                                    <ul class="sort-bar__select-option-list">
+                                        <li class="sort-bar__select-option-item">Giá: Thấp đến Cao</li>
+                                        <li class="sort-bar__select-option-item">Giá: Cao đến Thấp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort-bar__page">
+                                <span class="sort-bar__current-page">1</span>/10
+                                <div class="sort-bar__tranfer">
+                                    <button class="sort-bar__btn sort-bar__btn-disabled mr--4"><i class="fas fa-angle-left"></i></button>
+                                    <button class="sort-bar__btn"><i class="fas fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

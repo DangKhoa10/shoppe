@@ -714,6 +714,7 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.212);
     border-radius: 2px;
     display: none;
+    z-index: 9999;
 }
 
 .header__history-search-header {
@@ -986,6 +987,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .category__heading-icon {
@@ -1037,4 +1039,129 @@
 .category-link:hover {
     color: var(--color-main);
     right: -5px;
+}
+
+
+/*sort bar*/
+
+.sort-bar {
+    background-color: #ededed;
+    width: 100%;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-bar__lable {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.589);
+    font-weight: 500;
+}
+
+.btn--sort-bar {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    min-width: 90px;
+}
+
+.sort-bar__select {
+    display: inline-block;
+    background-color: var(--white-color);
+    height: 36px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    position: relative;
+}
+
+.sort-bar__select:hover .sort-bar__select-option {
+    display: block;
+}
+
+.sort-bar__select-option {
+    position: absolute;
+    top: 102%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    left: 0;
+    width: 100%;
+    display: none;
+    animation: FadeIn ease-in 0.2s;
+}
+
+.sort-bar__select-option-list {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.sort-bar__select-option-item {
+    padding: 0 12px;
+    height: 36px;
+    line-height: 36px;
+    color: var(--text-color);
+}
+
+.sort-bar__select-option-item:hover {
+    color: var(--color-main);
+}
+
+.sort-bar__select-icon {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.sort-bar__page {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.sort-bar__current-page {
+    color: var(--color-main);
+}
+
+.sort-bar__tranfer {
+    margin-left: 20px;
+}
+
+.sort-bar__btn {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    outline: none;
+    height: 36px;
+    text-decoration: none;
+    padding: 0 12px;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.sort-bar__btn.sort-bar__btn-disabled {
+    cursor: default;
+    background-color: #f9f9f9;
+    border-color: rgba(0, 0, 0, 0.09);
+    color: #ccc;
+    pointer-events: none;
+}
+
+.sort-bar__btn:hover {
+    background-color: var(--white-color);
 }
