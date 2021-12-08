@@ -57,7 +57,8 @@
     top: calc(100% + 8px);
     right: 0;
     cursor: pointer;
-    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: none;
     transform-origin: calc(100% - 32px) top;
     animation: InfoGrowth ease-in 0.3s;
@@ -235,7 +236,8 @@
     right: 0;
     width: 40rem;
     cursor: pointer;
-    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transform-origin: calc(100% - 32px) top;
     animation: InfoGrowth ease-in 0.3s;
     will-change: opacity, transform;
@@ -348,7 +350,8 @@
     top: calc(100% + 8px);
     right: 0;
     cursor: pointer;
-    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transform-origin: calc(100% - 32px) top;
     animation: InfoGrowth ease-in 0.2s;
     will-change: opacity, transform;
