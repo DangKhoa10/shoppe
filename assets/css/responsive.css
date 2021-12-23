@@ -47,6 +47,9 @@
     .mp-mobile-footer {
         padding: 0 16px;
     }
+    .mb-mobile {
+        margin-bottom: 24px;
+    }
     .mp-mobile {
         margin: 0 4px;
         padding-top: 8px;
@@ -108,8 +111,18 @@
         margin: 0;
     }
     .pagination-link {
-        min-width: 17px;
+        min-width: 22px;
         font-size: 1.6rem;
+        margin: 0px 10px;
+    }
+    .footer__introduce--heading {
+        text-align: center;
+    }
+    .footer__introduce-link,
+    .footer__introduce-pay,
+    .footer__download,
+    .footer__transport {
+        justify-content: center;
     }
 }
 
