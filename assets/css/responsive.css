@@ -1,10 +1,6 @@
 /* Mobile & Tablet */
 
 @media (max-width:1023px) {
-     :root {
-        --height-navbar: 0px;
-        --height-header: 70px;
-    }
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -44,6 +40,10 @@
 /* Mobile */
 
 @media (max-width:739px) {
+     :root {
+        --height-navbar: 0px;
+        --height-header: 50px;
+    }
     .mp-mobile-footer {
         padding: 0 16px;
     }
@@ -133,6 +133,10 @@
 /* Tablet */
 
 @media (min-width:740px) and (max-width:1023px) {
+     :root {
+        --height-navbar: 0px;
+        --height-header: 70px;
+    }
     .hide-on-tablet {
         display: none;
     }
