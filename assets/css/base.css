@@ -22,16 +22,6 @@ html {
 
 /*Reponsive*/
 
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +169,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
 }
 
 .pagination-item--active:hover .pagination-link {
