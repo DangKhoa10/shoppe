@@ -124,6 +124,9 @@
     .footer__transport {
         justify-content: center;
     }
+    .footer__introduce-link {
+        text-align: center;
+    }
 }
 
 
@@ -136,5 +139,8 @@
     .header__cart {
         width: 69px;
         text-align: right;
+    }
+    .footer__transport {
+        justify-content: center;
     }
 }
